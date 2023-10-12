@@ -7,11 +7,12 @@ const fruit = ['Apple', 'Apricot', 'Avocado 🥑', 'Banana', 'Bilberry', 'Blackb
 //Create list from results
 function createLi(results){
 	const newLi = document.createElement("li")
+
 	newLi.innerText = results;
 	newLi.classList.add("suggestion");
 	newLi.setAttribute('id', results);
+
 	suggestions.append(newLi);
-	suggestions.classList.add("has-suggestions")
 }
 
 //delete all lists except for current argument
@@ -59,7 +60,7 @@ function searchHandler(e) {
 
 
 //creates and populates list when results are given from input
-function showSuggestions(results, inputVal) {
+function showSuggestions(results) {
 	//loop over results array
 	for(let i =0; i< results.length; i++){
 	//if value exists,
