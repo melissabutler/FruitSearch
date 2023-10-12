@@ -9,10 +9,6 @@
 body {
   font-size: 20px;
   background: linear-gradient(90deg, rgba(255,166,31,1) 0%, rgb(252, 56, 21) 100%);
-/*   
-  margin: auto;
-  height: 100%; */
-  /* TODO */
 }
 .parent {
   height: 100vh;
@@ -27,65 +23,41 @@ body {
 }
 
 /* Form Input */
-
-/* Contains list of Suggestions */
-.search-container{
-  
-}
-.search-container input,
-.search-container .suggestions {
-   
-   width: 100%;
-}
-.search-container input {
-  width: 20%;
-
- 
- /* TODO */
-}
 input {
   background-color: rgba(255, 255, 255, 0.5);
   position: absolute;
-  padding: 10px;
+  margin: 0;
+  padding: 10px 10px 10px 10px;
+  width: 200px;
 }
 .search-container .suggestions {
  min-width: 150px;
- width: 200px;
+ width: 300px;
  top: 25px;
  position: relative;
  display: inline;
  padding: 10px;
    /* TODO */
 }
+
 /* Base List */
 ul {
   list-style-type: none;
   display: hidden;
   margin: 0;
   padding: 0;
-  /* list-style: none; */
-  
-  /* TODO */
+  width: 220px;
 }
 li {
   list-style-type: none;
-  margin-left: -10;
   padding: 10px;
 }
-ul.has-suggestions {
-/* TODO */
-}
+
 ul li {
   list-style-type: none;
   background-color: rgba(255, 255, 0, 0.5);
-  /* TODO */
 }
 ul li:hover {
   background-color: orange; 
 
-  /* TODO */
-}
-
-input {
-   /* TODO */
 }
